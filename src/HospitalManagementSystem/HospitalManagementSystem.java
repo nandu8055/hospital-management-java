@@ -35,23 +35,28 @@ public class HospitalManagementSystem {
                         //add patient
                         patient.addPatient();
                         System.out.println();
+                        break;
                     case 2:
                         //view patient
                         patient.viewPatients();
                         System.out.println();
+                        break;
                     case 3:
                         //view doctors
                         doctor.viewDoctors();
                         System.out.println();
+                        break;
                     case 4:
                         //book appointment
                         bookAppointment(patient,doctor,connection,scanner);
                         System.out.println();
+                        break;
                     case 5:
                         //exit
                         return;
                     default:
                         System.out.println("**ENTER VALID CHOICE**");
+                        break;
                 }
             }
         }catch (SQLException e){
